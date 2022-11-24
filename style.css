@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,300&display=swap");
+
+:root {
+  --whitest: #f8f9fa;
+  --white: #f8f9fa;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #7fb0de 0%, #ae94c7 100%);
+}
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+th {
+  text-align: left;
+  color: #90a3d2;
+  font-weight: 400;
+  cursor: pointer;
+}
+th:nth-child(2) {
+  color: #92a1d1;
+}
+
+th:nth-child(3) {
+  color: #96a0d0;
+}
+
+th:nth-child(4) {
+  color: #999ece;
+}
+th:nth-child(5) {
+  color: #9c9ccd;
+}
+
+td {
+  text-align: left;
+  color: rgba(255, 255, 255, 0.792);
+  font-weight: 300;
+  cursor: pointer;
+}
+
+th:active,
+th:focus {
+  background-color: rgba(255, 255, 255, 0.907);
+  color: #8ec5fc;
+}
+
+td:active,
+td:focus {
+  background-color: rgba(255, 255, 255, 0.907);
+  color: #8ec5fc;
+}
+
+thead th {
+  background-color: rgba(255, 255, 255, 0.792);
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
